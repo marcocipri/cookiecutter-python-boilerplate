@@ -1,11 +1,15 @@
 {
-	"full_name": "Audrey Roy",
-	"email": "audreyr@gmail.com",
-	"github_username": "audreyr",
-	"project_name": "Python Boilerplate",
-	"repo_name": "boilerplate",
-	"project_short_description": "Python Boilerplate contains all the boilerplate you need to create a Python package.",
-	"release_date": "2014-01-11",
-	"year": "2014",
-	"version": "0.1.0"
+    "project": "Boilerplate-project",
+    "egg": "boilerplate_project",
+    "package": "boilerplateproject",
+	"version": "0.1",
+	"description": "One-line description of the package",
+	"keywords": "space separated keywords",
+	"author": "Author Name",
+	"author_email": "author@email.com",
+	"url": "http://homepage/url",
+	"license_name": "MIT",
+	"install_requires": "",
+    "year": "2014"
+	"zip_safe": "False"
 }
