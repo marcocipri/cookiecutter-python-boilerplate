@@ -125,3 +125,4 @@ Copyright & License
 
   * Copyright {{cookiecutter.year}}, {{cookiecutter.author}}
   * License: {{cookiecutter.license_name}}
+
