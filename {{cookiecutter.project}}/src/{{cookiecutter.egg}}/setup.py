@@ -24,9 +24,9 @@ class PyTest(TestCommand):
         sys.exit(pytest.main(self.test_args))
 
 
-version = {{repr(cookiecutter.version or "0.0")}}
+version = "{{cookiecutter.version}}"
 
-setup(name={{repr(cookiecutter.project)}},
+setup(name="{{cookiecutter.project}}",
       version=version,
       description="{{cookiecutter.description or ''}}",
       long_description=open("README.rst").read(),
@@ -34,19 +34,19 @@ setup(name={{repr(cookiecutter.project)}},
         'Development Status :: 1 - Planning',
         'Programming Language :: Python'
       ],
-      keywords={{repr(cookiecutter.keywords or '')}}, # Separate with spaces
-      author={{repr(cookiecutter.author or '')}},
-      author_email={{repr(cookiecutter.author_email or '')}},
-      url={{repr(cookiecutter.url or '')}},
-      license={{repr(cookiecutter.license_name or '')}},
+      keywords="{{cookiecutter.keywords}}", # Separate with spaces
+      author="{{cookiecutter.author}}",
+      author_email="{{cookiecutter.author_email}}",
+      url="{{cookiecutter.url}}",
+      license="{{cookiecutter.license_name}}",
       packages=find_packages(exclude=['examples', 'tests']),
       include_package_data=True,
-      zip_safe={{repr(bool(cookiecutter.zip_safe or False))}},
+      zip_safe={{cookiecutter.zip_safe}},
       tests_require=['pytest'],
       cmdclass={'test': PyTest},
       
       # TODO: List of packages that this one depends upon:   
-      install_requires={{repr(cookiecutter.install_requires.split() or [])}},
+      install_requires={{cookiecutter.install_requires.split().__repr__()}},
       # TODO: List executable scripts, provided by the package (this is just an example)
       entry_points={
         'console_scripts': 
