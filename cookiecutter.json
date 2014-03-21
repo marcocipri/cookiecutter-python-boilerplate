@@ -10,6 +10,6 @@
 	"url": "http://homepage/url",
 	"license_name": "MIT",
 	"install_requires": "",
-    "year": "2014"
+    "year": "2014",
 	"zip_safe": "False"
 }
