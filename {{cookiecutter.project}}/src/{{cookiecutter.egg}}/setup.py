@@ -26,22 +26,22 @@ class PyTest(TestCommand):
 
 version = "{{cookiecutter.version}}"
 
-setup(name={{cookiecutter.project.__repr__()}},
+setup(name="{{cookiecutter.project}}",
       version=version,
-      description={{cookiecutter.description.__repr__()}},
+      description="{{cookiecutter.description}}",
       long_description=open("README.rst").read(),
       classifiers=[ # Get strings from http://pypi.python.org/pypi?%3Aaction=list_classifiers
         'Development Status :: 1 - Planning',
         'Programming Language :: Python'
       ],
-      keywords={{cookiecutter.keywords.__repr__()}}, # Separate with spaces
-      author={{cookiecutter.author.__repr__()}},
-      author_email={{cookiecutter.author_email.__repr__()}},
-      url={{cookiecutter.url.__repr__()}},
-      license={{cookiecutter.license_name.__repr__()}},
+      keywords="{{cookiecutter.keywords}}", # Separate with spaces
+      author="{{cookiecutter.author}}",
+      author_email="{{cookiecutter.author_email}}",
+      url="{{cookiecutter.url}}",
+      license="{{cookiecutter.license_name}}",
       packages=find_packages(exclude=['examples', 'tests']),
       include_package_data=True,
-      zip_safe={{cookiecutter.zip_safe.__repr__()}},
+      zip_safe={{cookiecutter.zip_safe}},
       tests_require=['pytest'],
       cmdclass={'test': PyTest},
       
