@@ -1,6 +1,6 @@
 {
     "project": "Boilerplate-project",
-    "egg": "boilerplate_project",
+    "egg": "Boilerplate_project",
     "package": "boilerplateproject",
 	"version": "0.1",
 	"description": "One-line description of the package",
