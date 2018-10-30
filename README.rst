@@ -1,5 +1,7 @@
 ========================================
 Python-Boilerplate cookiecutter template
+tolen on 
+https://github.com/konstantint/cookiecutter-python-boilerplate
 ========================================
 
 This is a `CookieCutter <http://pydanny.com/cookie-project-templates-made-easy.html>`_ template for generating a Python project. It provides simple starting points for using some of the popular best-practices:
